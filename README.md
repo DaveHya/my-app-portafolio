@@ -1,2 +1,2 @@
 # components-magic-ui
-Componentes de la libreria Magic UI 
+Componentes de la libreria Magic UI para NextJs 
