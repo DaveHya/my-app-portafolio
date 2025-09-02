@@ -4,6 +4,7 @@ import Compo from '../components/Compo';
 import Bento from '../components/Bento';
 // import Kpi from "../components/Kpi";
 
+
 // Ensure that '../components/Compo.tsx' exists and exports a default React component.
 
 export default function Home() {
@@ -12,8 +13,9 @@ export default function Home() {
       <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
         <h1>Home</h1>
       <Compo />
-     <Bento />
+     {/* <Bento /> */}
      {/* <Kpi /> */}
+    
       </main>
       <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
        

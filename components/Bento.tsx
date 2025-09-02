@@ -3,12 +3,13 @@ import { BellIcon, Share2Icon } from "lucide-react";
 import { RetroGrid } from "@/components/magicui/retro-grid";
 import { Meteors } from "@/components/magicui/meteors";
 import  Connect  from "./Connect";
+import List from "./List";
 
 
 //import { Calendar } from "@/components/ui/calendar";
 import { cn } from "@/lib/utils";
-// import AnimatedBeamMultipleOutputDemo from "@/registry/example/animated-beam-multiple-outputs";
-// import AnimatedListDemo from "@/registry/example/animated-list-demo";
+ //import AnimatedBeamMultipleOutputDemo from "@/registry/example/animated-beam-multiple-outputs";
+ //import AnimatedListDemo from "@/registry/example/animated-list-demo";
 // import { AnimatedList } from "@/components/magicui/animated-list";
 import { BentoCard, BentoGrid } from "@/components/magicui/bento-grid";
 import { Marquee } from "@/components/magicui/marquee";
@@ -50,51 +51,47 @@ const features = [
     cta: "Leer ",
     className: "col-span-3 lg:col-span-1",
     background: (
-      <Marquee
-        pauseOnHover
-        className="absolute top-10 [--duration:20s] [mask-image:linear-gradient(to_top,transparent_40%,#000_100%)] "
-      >
-        {files.map((f, idx) => (
-          <figure
-            key={idx}
-            className={cn(
-              "relative w-32 cursor-pointer overflow-hidden rounded-xl border p-4",
-              "border-gray-950/[.1] bg-gray-950/[.01] hover:bg-gray-950/[.05]",
-              "dark:border-gray-50/[.1] dark:bg-gray-50/[.10] dark:hover:bg-gray-50/[.15]",
-              "transform-gpu blur-[1px] transition-all duration-300 ease-out hover:blur-none",
-            )}
-          >
-            <div className="flex flex-row items-center gap-2">
-              <div className="flex flex-col">
-                <figcaption className="text-sm font-medium dark:text-white ">
-                  {f.name}
-                </figcaption>
-              </div>
-            </div>
-            <blockquote className="mt-2 text-xs">{f.body}</blockquote>
-          </figure>
-        ))}
-      </Marquee>
+      <img src="https://avatars.githubusercontent.com/u/86314059?v=4" alt="profile" style={{width: "100%", height: "70%"}} className="absolute top-0 h-[500px] w-full flex-col items-center justify-center overflow-hidden rounded-lg border object-cover"/>
+      // <Marquee
+      //   pauseOnHover
+      //   className="absolute top-10 [--duration:20s] [mask-image:linear-gradient(to_top,transparent_40%,#000_100%)] "
+      // >
+      //   {files.map((f, idx) => (
+      //     <figure
+      //       key={idx}
+      //       className={cn(
+      //         "relative w-32 cursor-pointer overflow-hidden rounded-xl border p-4",
+      //         "border-gray-950/[.1] bg-gray-950/[.01] hover:bg-gray-950/[.05]",
+      //         "dark:border-gray-50/[.1] dark:bg-gray-50/[.10] dark:hover:bg-gray-50/[.15]",
+      //         "transform-gpu blur-[1px] transition-all duration-300 ease-out hover:blur-none",
+      //       )}
+      //     >
+      //       <div className="flex flex-row items-center gap-2">
+      //         <div className="flex flex-col">
+      //           <figcaption className="text-sm font-medium dark:text-white ">
+      //             {f.name}
+      //           </figcaption>
+      //         </div>
+      //       </div>
+      //       <blockquote className="mt-2 text-xs">{f.body}</blockquote>
+      //     </figure>
+      //   ))}
+      // </Marquee> 
      
     ),
   },
-  {
-    Icon: BellIcon,
-    name: "Servicios",
-    description: "Conoce mis servicios",
-    href: "#",
-    cta: "Leer",
-    className: "col-span-3 lg:col-span-2",
-   //  background: (
-//       <AnimatedList>
-//   <p>Item 1</p>
-//   <p>Item 2</p>
-//   <p>Item 3</p>
-// </AnimatedList>
-   //    <AnimatedListDemo className="absolute right-2 top-4 h-[300px] w-full scale-75 border-none transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_10%,#000_100%)] group-hover:scale-90" />
-  //    <Connect/>
-  // ),
-  },
+{
+  Icon: BellIcon,
+  name: "Servicios",
+  description: "Conoce mis servicios",
+  href: "#",
+  cta: "Leer",
+  className: "col-span-3 lg:col-span-2",
+  background: (
+    <List/>
+ 
+  ),
+},
   {
     Icon: Share2Icon,
     name: "Proyectos",
@@ -152,10 +149,10 @@ const features = [
  export function Bkg () {
 
   return(
-    <div className="relative flex h-[500px] w-full flex-col items-center justify-center overflow-hidden rounded-lg border">
+    <div className="absolute top-0 flex h-[500px] w-full flex-col items-center justify-center overflow-hidden rounded-lg border">
       <Meteors number={40} />
-      <span className="pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-black to-gray-300/80 bg-clip-text text-center text-8xl font-semibold leading-none text-transparent dark:from-white dark:to-slate-900/10">
-        Meteoros
+      <span className="pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-black to-gray-300/80 bg-clip-text text-center text-5xl font-semibold leading-none text-transparent dark:from-white dark:to-slate-900/10">
+       Technology Stack
       </span>
 
       

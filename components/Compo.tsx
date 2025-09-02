@@ -4,57 +4,62 @@ import { cn } from "@/lib/utils";
 import { Marquee } from "@/components/magicui/marquee";
 
 import { BentoCard, BentoGrid } from "@/components/magicui/bento-grid";
-import { img } from "motion/react-client";
+//import { img } from "motion/react-client";
 
 const reviews = [
   {
      body: "JavaScript", 
-    img: "https://raw.githubusercontent.com/DaveHya/my-portafolio/refs/heads/main/src/img/skills/JS.png?token=GHSAT0AAAAAADJ354Z32XOBDKCRT7TZE3TC2FV6SWA",
+    img: "https://cdn-icons-png.flaticon.com/512/5968/5968292.png", 
   },
   {
     body: "HTML",
-    img: "https://raw.githubusercontent.com/DaveHya/my-portafolio/refs/heads/main/src/img/skills/Html.png?token=GHSAT0AAAAAADJ354Z2ADBUV5MOSQGA5ENI2FV7NZA",
+    img: "https://cdn-icons-png.flaticon.com/512/1051/1051277.png",
   },
   {
  
     body: "CSS",
-    img: "https://raw.githubusercontent.com/DaveHya/my-portafolio/refs/heads/main/src/img/skills/CSS.png?token=GHSAT0AAAAAADJ354Z3S4LLV4BTBG65O2NI2FWABPA",
+    img: "https://cdn-icons-png.flaticon.com/512/732/732190.png",
   },
   {
 
     body: "Figma",
-    img: "https://raw.githubusercontent.com/DaveHya/my-portafolio/refs/heads/main/src/img/skills/Figma.png?token=GHSAT0AAAAAADJ354Z33FC47GBAV6TI3JDI2FV7QBQ",
+    img: "https://cdn-icons-png.flaticon.com/512/5968/5968705.png",
   },
   {
    
     body: "Git ",
-    img: "https://raw.githubusercontent.com/DaveHya/my-portafolio/refs/heads/main/src/img/skills/Git.png?token=GHSAT0AAAAAADJ354Z243ZAXGP33M4UTEPS2FWACOA",
+    img: "https://cdn-icons-png.flaticon.com/512/15466/15466163.png",
   },
   {
 
     body: "React",
-    img: "https://raw.githubusercontent.com/DaveHya/my-portafolio/refs/heads/main/src/img/skills/react.png?token=GHSAT0AAAAAADJ354Z2DFHDIZBOSOZOM33A2FWADIA",
+    img: "https://cdn-icons-png.flaticon.com/512/875/875209.png",
   },
   {
 
     body: "Wordpress",
-    img: "https://raw.githubusercontent.com/DaveHya/my-portafolio/refs/heads/main/src/img/skills/wordpress.png?token=GHSAT0AAAAAADJ354Z3UVS2QQRVFQNPKJFO2FWADZQ",
+    img: "https://cdn-icons-png.flaticon.com/512/174/174881.png",
   },
-    {
-
-    body: "Vtex",
-    img: "https://raw.githubusercontent.com/DaveHya/my-portafolio/refs/heads/main/src/img/skills/vtex.png?token=GHSAT0AAAAAADJ354Z2UUDEJYLPHJGHHOKS2FWAFMQ",
-  },
+  //   {
+    
+  //   body: "Vtex",
+  //   img: "https://raw.githubusercontent.com/DaveHya/my-portafolio/refs/heads/main/src/img/skills/vtex.png?token=GHSAT0AAAAAADJ354Z2UUDEJYLPHJGHHOKS2FWAFMQ",
+  // },
    {
 
     body: "Boostrap",
-    img: "https://raw.githubusercontent.com/DaveHya/my-portafolio/refs/heads/main/src/img/skills/boostrap.png?token=GHSAT0AAAAAADJ354Z3KWT4G5B5UPYUWXUQ2FWAGQQ",
+    img: "https://cdn-icons-png.flaticon.com/512/5968/5968672.png",
   },
    {
 
     body: "Sass",
-    img: "https://raw.githubusercontent.com/DaveHya/my-portafolio/refs/heads/main/src/img/skills/Sass.png?token=GHSAT0AAAAAADJ354Z3KK7MVVFH33SDDMVI2FWAH5A",
+    img: "https://cdn-icons-png.flaticon.com/512/919/919831.png",
   },
+  //  {
+
+  //   body: "Tailwind",
+  //   img: "",
+  // },
 ];
 
 const firstRow = reviews.slice(0, reviews.length / 2);
@@ -62,19 +67,19 @@ const secondRow = reviews.slice(reviews.length / 2);
 
 const ReviewCard = ({
   img,
-  name,
-  username,
+   name,
+   username,
   body,
 }: {
   img: string;
-  name: string;
-  username: string;
+   name: string;
+ username: string;
   body: string;
 }) => {
   return (
     <figure
       className={cn(
-        "relative h-34 w-34 cursor-pointer overflow-hidden rounded-xl border p-4 ",
+        "relative h-28 w-30 cursor-pointer overflow-hidden rounded-xl border p-4 ",
         // light styles
         "border-gray-950/[.1] bg-gray-950/[.01] hover:bg-gray-950/[.05]",
         // dark styles
@@ -82,16 +87,16 @@ const ReviewCard = ({
       )}
     >
     <div>
-      <div className="flex flex-row items-center gap-4 place-content-center">
-        <img className="self-center place-content-center" width="80" height="32" alt="" src={img} />
+      <div className="flex flex-row self-center items-center items-center  place-content-center">
+        <img className="self-center place-content-center" width="50" height="32" alt="" src={img} />
         <div className="flex flex-col">
-          {/* <figcaption className="text-sm font-medium dark:text-white">
+          <figcaption className="text-sm font-medium dark:text-white">
             {name}
-          </figcaption> */}
-          {/* <p className="text-xs font-medium dark:text-white/40">{username}</p> */}
+          </figcaption>
+          <p className="text-xs font-medium dark:text-white/40">{username}</p>
         </div>
       </div>
-      <blockquote className="mt-2 text-sm text-center">{body}</blockquote>
+      <blockquote className="mt-2 text-xs text-center font-light uppercase">{body}</blockquote>
       </div>
      </figure>
   );
