@@ -1,23 +1,28 @@
 import { CalendarIcon, FileTextIcon } from "@radix-ui/react-icons";
-import { BellIcon, Share2Icon } from "lucide-react";
+import {
+  BellIcon,
+  Share2Icon,
+  HandPlatter,
+  User,
+  FolderKanban,
+  Handshake,
+} from "lucide-react";
 import { RetroGrid } from "@/components/magicui/retro-grid";
 import { Meteors } from "@/components/magicui/meteors";
-import  Connect  from "./Connect";
-import List from "./List";
-
+import { LightRays } from "@/components/ui/light-rays"
+// import ServList from "./ServList";
+// import  Connect  from "./Connect";
+// import List from "./List";
 
 //import { Calendar } from "@/components/ui/calendar";
 import { cn } from "@/lib/utils";
- //import AnimatedBeamMultipleOutputDemo from "@/registry/example/animated-beam-multiple-outputs";
- //import AnimatedListDemo from "@/registry/example/animated-list-demo";
+//import AnimatedBeamMultipleOutputDemo from "@/registry/example/animated-beam-multiple-outputs";
+//import AnimatedListDemo from "@/registry/example/animated-list-demo";
 // import { AnimatedList } from "@/components/magicui/animated-list";
 import { BentoCard, BentoGrid } from "@/components/magicui/bento-grid";
-import { Marquee } from "@/components/magicui/marquee";
-import { div } from "motion/react-client";
+// import { Marquee } from "@/components/magicui/marquee";
+// import { div } from "motion/react-client";
 import { Globe } from "@/components/magicui/globe";
-
-
-
 
 const files = [
   {
@@ -42,140 +47,93 @@ const files = [
   },
 ];
 
+const handService = <HandPlatter color="#ffffff" />;
+
 const features = [
   {
-    Icon: FileTextIcon,
+    Icon: User,
     name: "Sobre Mi",
-    description: "We automatically save your files as you type.",
-    href: "#",
-    cta: "Leer ",
+    description: "Conoce sobre mi",
+    href: "/about",
+    cta: "Ver Sobre Mi ➤ ",
     className: "col-span-3 lg:col-span-1",
-    background: (
-      <img src="https://avatars.githubusercontent.com/u/86314059?v=4" alt="profile" style={{width: "100%", height: "70%"}} className="absolute top-0 h-[500px] w-full flex-col items-center justify-center overflow-hidden rounded-lg border object-cover"/>
-      // <Marquee
-      //   pauseOnHover
-      //   className="absolute top-10 [--duration:20s] [mask-image:linear-gradient(to_top,transparent_40%,#000_100%)] "
-      // >
-      //   {files.map((f, idx) => (
-      //     <figure
-      //       key={idx}
-      //       className={cn(
-      //         "relative w-32 cursor-pointer overflow-hidden rounded-xl border p-4",
-      //         "border-gray-950/[.1] bg-gray-950/[.01] hover:bg-gray-950/[.05]",
-      //         "dark:border-gray-50/[.1] dark:bg-gray-50/[.10] dark:hover:bg-gray-50/[.15]",
-      //         "transform-gpu blur-[1px] transition-all duration-300 ease-out hover:blur-none",
-      //       )}
-      //     >
-      //       <div className="flex flex-row items-center gap-2">
-      //         <div className="flex flex-col">
-      //           <figcaption className="text-sm font-medium dark:text-white ">
-      //             {f.name}
-      //           </figcaption>
-      //         </div>
-      //       </div>
-      //       <blockquote className="mt-2 text-xs">{f.body}</blockquote>
-      //     </figure>
-      //   ))}
-      // </Marquee> 
-     
-    ),
+      //  background: (   <Globe />),
   },
-{
-  Icon: BellIcon,
-  name: "Servicios",
-  description: "Conoce mis servicios",
-  href: "#",
-  cta: "Leer",
-  className: "col-span-3 lg:col-span-2",
-  background: (
-    <List/>
- 
-  ),
-},
+
   {
-    Icon: Share2Icon,
+    Icon: Handshake,
+    name: "Servicios",
+    description: "Conoce mis servicios",
+    href: "/gallery",
+    cta: "Ver Servicios ➤",
+    className: "col-span-3 lg:col-span-2",
+      //  background: (   <Globe />),
+    // background: (
+    //   <ServList/>
+    // ),
+  },
+  {
+    Icon: FolderKanban,
     name: "Proyectos",
     description: "Descubre mis proyectos",
-    href: "#",
-    cta: "Leer más",
-    className: "col-span-3 lg:col-span-2",
-   background: (
-    //  <div className="relative flex h-[500px] w-full flex-col items-center justify-center overflow-hidden rounded-lg border">
+    href: "/work",
+    cta: "Ver Proyectos ➤",
+    className: "col-span-3 lg:col-span-2 border-inherit",
+    //  background: (   <Globe />),
+    //  <div className=   ] w-full flex-col items-center justify-center overflow-hidden rounded-lg border">
     //   <Meteors number={30} />
     //   <span className="pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-black to-gray-300/80 bg-clip-text text-center text-8xl font-semibold leading-none text-transparent dark:from-white dark:to-slate-900/10">
     //    Services
     //   </span>
     // </div>
-     <Bkg />
-     ),
+    //  <Bkg />
+    //  ),
   },
   {
-    Icon: CalendarIcon,
-    name: "Calendar",
-    description: "Use the calendar to filter your files by date.",
+    Icon: "s",
+    name: "Hola Mundo",
+    description: "",
     className: "col-span-3 lg:col-span-1",
-    href: "#",
-    cta: "Learn more",
-   
-     background: (
-    //   <Calendar
-    //     mode="single"
-    //     selected={new Date(2022, 4, 11, 0, 0, 0)}
-    //     className="absolute right-0 top-10 origin-top scale-75 rounded-md border transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_40%,#000_100%)] group-hover:scale-90"
-    //   />
-    <Globe />
-    ),
+
+
   },
 ];
 
-
 //Retro Grid Background
-  export function BkGrid (){
-    return(
-
-    
-     <div className="relative flex h-[500px] w-full flex-col items-center justify-center overflow-hidden rounded-lg border bg-background">
-      <span className="pointer-events-none z-10 whitespace-pre-wrap bg-gradient-to-b from-[#ffd319] via-[#ff2975] to-[#8c1eff] bg-clip-text text-center text-7xl font-bold leading-none tracking-tighter text-transparent">
-       Proyectos
+export function BkGrid() {
+  return (
+    <div className="mt-20 relative flex h-[500px] w-full flex-col items-center justify-center overflow-hidden rounded-lg border bg-background">
+      <span className="bg-red-700 pointer-events-none z-10 whitespace-pre-wrap bg-gradient-to-b from-[#ffd319] via-[#ff2975] to-[#8c1eff] bg-clip-text text-center text-7xl font-bold leading-none tracking-tighter text-transparent">
+        Proyectos
       </span>
- 
+
       <RetroGrid />
     </div>
-    )
-  }
+  );
+}
 
-
-  // Meteor Background
- export function Bkg () {
-
-  return(
-    <div className="absolute top-0 flex h-[500px] w-full flex-col items-center justify-center overflow-hidden rounded-lg border">
+// Meteor Background
+export function Bkg() {
+  return (
+    //absolute
+    <div className=" top-0 flex h-[500px] w-full flex-col items-center justify-center overflow-hidden rounded-lg border">
       <Meteors number={40} />
       <span className="pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-black to-gray-300/80 bg-clip-text text-center text-5xl font-semibold leading-none text-transparent dark:from-white dark:to-slate-900/10">
-       Technology Stack
+        Projects
       </span>
-
-      
     </div>
-  )
+  );
 }
 
 export default function Bento() {
   return (
-  <div>
-
- 
-    <BentoGrid>
-      {features.map((feature, idx) => (
-        <BentoCard key={idx} {...feature} />
-      ))}
-
-        {/* <Bkg /> */}
-       
-    </BentoGrid>
-      <BkGrid/>
- </div>
- 
-
+    <div className="dave">
+      
+        <BentoGrid>
+          {features.map((feature, idx) => (
+            <BentoCard key={idx} {...feature} />
+          ))}
+        </BentoGrid>
+    </div>
   );
 }
