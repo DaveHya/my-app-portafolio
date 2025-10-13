@@ -5,18 +5,20 @@ import Bento from '../components/Bento';
  import Kpi from "../components/Kpi";
 import MenuBar from "../components/MenuBar";
 import { LightRays } from "@/components/ui/light-rays"
+import Servicios from "../pages/Servicios";
+import CallMe from "../components/CallMe";
 import {
-  // Heading,
-  // Text,
-  // Button,
-  // Avatar,
+  Heading,
+  Text,
+  Button,
+  Avatar,
   RevealFx,
-  // Column,
-  // Badge,
-  // Row,
-  // Schema,
-  // Meta,
-  // Line,
+  Column,
+  Badge,
+  Row,
+  Schema,
+  Meta,
+  Line,
 } from "@once-ui-system/core";
 
 
@@ -26,6 +28,7 @@ export default function Home() {
   return (
     <div className=" font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
       <main className=" b flex flex-col  row-start-2 w-full h-full">
+         {/* <MenuBar /> */}
         <div className="flex flex-row items-left  "> 
         <div className="flex flex-col   "> 
        <LightRays color="rgba(123, 171, 242, 0.42)" />
@@ -37,8 +40,10 @@ export default function Home() {
         <Kpi />
       {/* <Compo /> */}
      <Bento /> 
-   
-    <MenuBar />
+     <div className="mt-10"><h1 className="text-center font-semibold text-3xl">Mis servicios</h1></div>
+     <Servicios />
+     <CallMe/>
+{/*     <MenuBar /> */}
       </main>
       <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
        

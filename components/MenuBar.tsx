@@ -94,7 +94,8 @@ const DATA = {
 
 export default function MenuBar() {
   return (
-    <div className="flex  flex-col items-center justify-center">
+  
+    <div className="flex z-50  relative flex-col items-center justify-center">
       {/* <span className="pointer-events-none bg-gradient-to-b from-black to-gray-300/80 bg-clip-text text-center text-8xl leading-none font-semibold whitespace-pre-wrap text-transparent dark:from-white dark:to-slate-900/10">
         DOCK
       </span> */}
