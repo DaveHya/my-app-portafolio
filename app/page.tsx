@@ -5,8 +5,9 @@ import Bento from '../components/Bento';
  import Kpi from "../components/Kpi";
 import MenuBar from "../components/MenuBar";
 import { LightRays } from "@/components/ui/light-rays"
-import Servicios from "../pages/Servicios";
+import Servicios from "../components/Servicios";
 import CallMe from "../components/CallMe";
+import Proyectos from "../pages/proyectos";
 import {
   Heading,
   Text,
@@ -20,6 +21,7 @@ import {
   Meta,
   Line,
 } from "@once-ui-system/core";
+
 
 
 // Ensure that '../components/Compo.tsx' exists and exports a default React component.
@@ -38,15 +40,17 @@ export default function Home() {
       </div>
       </div>
         <Kpi />
-      {/* <Compo /> */}
-     <Bento /> 
+    
+     {/* <Bento />  */}
      <div className="mt-10"><h1 className="text-center font-semibold text-3xl">Mis servicios</h1></div>
      <Servicios />
+      <Compo />
      <CallMe/>
+     <Proyectos />
 {/*     <MenuBar /> */}
       </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-       
+      <footer className="bg-black w-full  h-30 row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
+       <h3>Footer</h3>
       </footer>
     </div>
   );
