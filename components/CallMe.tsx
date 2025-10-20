@@ -4,7 +4,7 @@ import { PulsatingButton } from "@/components/ui/pulsating-button"
 
 export default function CallMe() {
   return (
-    <div className="relative h-screen rounded-md bg-white overflow-hidden">
+    <div className="relative mb-2 h-screen rounded-md bg-white overflow-hidden">
       {/* Your content */}
       <div className="relative z-10 flex items-center justify-center h-full">
         <div className="text-center">

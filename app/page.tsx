@@ -6,6 +6,7 @@ import Bento from '../components/Bento';
 import MenuBar from "../components/MenuBar";
 import { LightRays } from "@/components/ui/light-rays"
 import Servicios from "../components/Servicios";
+import ServiciosMb from "../components/Servicios";
 import CallMe from "../components/CallMe";
 import Proyectos from "../pages/proyectos";
 import {
@@ -21,6 +22,7 @@ import {
   Meta,
   Line,
 } from "@once-ui-system/core";
+import About from "@/components/About";
 
 
 
@@ -40,17 +42,24 @@ export default function Home() {
       </div>
       </div>
         <Kpi />
+        {/* <About/> */}
     
      {/* <Bento />  */}
-     <div className="mt-10"><h1 className="text-center font-semibold text-3xl">Mis servicios</h1></div>
+     <div className="mt-20"><h1 className="text-center uppercase font-semibold text-3xl">Mis servicios</h1></div>
      <Servicios />
+     {/* <serviciosMb /> */}
+     <div className="mb-6"><h1 className="text-center uppercase font-semibold text-3xl">Skill Tech</h1></div>
       <Compo />
      <CallMe/>
      <Proyectos />
 {/*     <MenuBar /> */}
       </main>
-      <footer className="bg-black w-full  h-30 row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
+      <footer className="bg-black rounded-sm w-full  h-30 flex- flex  flex-wrap items-center justify-center">
        <h3>Footer</h3>
+
+       <div className="flex w-50 flex-col bg-amber-600">2</div>
+       <div className="flex w-50 flex-col bg-amber-300">1</div>
+       
       </footer>
     </div>
   );

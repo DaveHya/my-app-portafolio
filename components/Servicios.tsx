@@ -54,11 +54,43 @@ const cardsData = [
 
 export default function Servicios() {
   return (
-    <div className="w-full p-6    gap-4 flex justify-center flex-wrap">
+    <div className="w-full p-6   mb-20  gap-4 flex justify-center flex-wrap">
  
      {cardsData.map((card) => (
        
          <div key={card.id} className="flex flex-row ">
+         <div className="flex p-5 gap-3  rounded-sm border-2 border-black border-solid ">
+                 
+                <div className="flex flex-col "  >
+                  <h1 >{card.title}</h1>
+                  <div className=" w-90" >
+                    {card.description}
+                  </div>
+                </div>
+                </div>
+
+
+                
+                </div>
+
+                
+              
+      
+          ))}
+       
+    </div>
+  )
+}
+
+
+export  function ServiciosMb() {
+  return (
+    <div className="w-full p-6   mb-20  gap-4 flex justify-center flex-wrap">
+ 
+     {cardsData.map((card) => (
+       
+         <div key={card.id} className="flex flex-row ">
+          <h1>Mobile</h1>
          <div className="flex p-5 gap-3  rounded-sm border-2 border-black border-solid ">
                  
                 <div className="flex flex-col "  >

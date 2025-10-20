@@ -15,13 +15,13 @@ import { RippleButton } from '@/components/ui/shadcn-io/ripple-button';
 // import { div } from "motion/react-client";
 
 
-import Sally from '../public/images/projects/sally.png'
+import Sally from '../images/projects/mideas.svg'
 
 const cardsDa = [
   {
     id: 1,
     name: "Dave H",
-    image: {Sally},
+    image: "../images/projects/sallyb.svg",
     title: "Sally Beauty",
     description:
       "Cadena especializada en productos profesionales para el cuidado del cabello, coloración, maquillaje, manicure y más, con despacho a todo Chile.",
@@ -238,9 +238,9 @@ export default function Proyectos() {
             <Image
              src={card.image}
               alt={card.title}
-              width={300}
-              height={100}
-              className="aspect-auto "
+              width={200}
+              height={50}
+              className="block w-80 h-50  object-cover mx-auto mb-4"
             />
               <h1 className="pt-3 uppercase font-bold">{card.title}</h1>
               <div key={card.id} className=" w-90">{card.description}</div>
