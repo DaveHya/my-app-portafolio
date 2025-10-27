@@ -3,6 +3,8 @@ import { Globe } from "@/components/magicui/globe";
 import { cn } from "@/lib/utils";
 import { Marquee } from "@/components/magicui/marquee";
 
+
+
 import { BentoCard, BentoGrid } from "@/components/magicui/bento-grid";
 //import { img } from "motion/react-client";
 
@@ -55,6 +57,26 @@ const reviews = [
     body: "Sass",
     img: "https://cdn-icons-png.flaticon.com/512/919/919831.png",
   },
+    {
+
+    body: "Jira",
+    img: "https://cdn-icons-png.flaticon.com/512/5968/5968875.png",
+  },
+      {
+
+    body: "Github",
+    img: "https://cdn-icons-png.flaticon.com/512/2111/2111432.png",
+  },
+        {
+
+    body: "Gitlab",
+    img: "https://cdn-icons-png.flaticon.com/512/5968/5968853.png",
+  },
+   //  {
+
+  //   body: "Multivende",
+  //   img: "",
+  // },
   //  {
 
   //   body: "Tailwind",
@@ -79,15 +101,16 @@ const ReviewCard = ({
   return (
     <figure
       className={cn(
-        "relative h-28 w-30 cursor-pointer overflow-hidden rounded-xl border p-4 ",
+        "relative h-28 w-30 cursor-pointer overflow-hidden rounded-xl border p-4  ",
         // light styles
         "border-gray-950/[.1] bg-gray-950/[.01] hover:bg-gray-950/[.05]",
         // dark styles
-        "dark:border-gray-50/[.1] dark:bg-gray-50/[.10] dark:hover:bg-gray-50/[.15]",
+        "dark:border-gray-50/[.1] dark:bg-gray-50/[.10] dark:hover:bg-gray-50/[.15]"
       )}
     >
+      
     <div>
-      <div className="flex flex-row self-center items-center items-center  place-content-center">
+      <div className="flex flex-row self-center items-center place-self-center place-content-center">
         <img className="self-center place-content-center" width="50" height="32" alt="" src={img} />
         <div className="flex flex-col">
           <figcaption className="text-sm font-medium dark:text-white">
@@ -103,8 +126,10 @@ const ReviewCard = ({
 };
 
 export function MarqueeDemo() {
+
+
   return (
-    <div className="relative flex w-full flex-col items-center justify-center overflow-hidden" style={{width: '80vw'}}>
+    <div className="relative flex w-full flex-col items-center caja place-self-center justify-center overflow-hidden self-center ">
       <Marquee pauseOnHover className="[--duration:20s]">
         {firstRow.map((review) => (
           <ReviewCard key={review.username} {...review} />

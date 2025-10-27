@@ -9,16 +9,16 @@ export default function Kpi() {
   return (
     <> 
   
-    <div  className="mt-10 flex text-black  items-center justify-center gap-10 flex-row w-100">
+    <div  className="lg:mt-10 mt-5 mb-6 px-3 flex self-center text-black  items-center justify-center gap-10 flex-row w-100">
 
- 
+  
  
     <div style={styleBk}  className=" border-gray-500 border-solid border-2 w-50  rounded-2xl  text-center  text-2xl font-medium text-black/60 dark:text-white/60">
       
       <div className=" flex items-center justify-center gap-2">
         <NumberTicker
           value={4}
-          className=" whitespace-pre-wrap text-8xl font-medium tracking-tighter dark:text-white"
+          className="lg:text-8xl whitespace-pre-wrap text-6xl font-medium tracking-tighter dark:text-white"
         />
          <TextAnimate animation="slideUp" by="word" duration={5}>
       Años
@@ -28,13 +28,13 @@ export default function Kpi() {
     </div>
 
 
-         <div style={styleBk}  className="  border-gray-500 border-solid border-2 w-50  rounded-2xl  w-50 text-center text-2xl font-medium  ">
+         <div style={styleBk}  className="  border-gray-500 border-solid border-2  rounded-2xl  w-50 text-center text-2xl font-medium  ">
      
       
     <div className=" flex items-center justify-center gap-2">
         <NumberTicker
           value={20}
-          className=" whitespace-pre-wrap text-8xl font-medium tracking-tighter dark:text-white"
+          className="lg:text-8xl whitespace-pre-wrap text-6xl font-medium tracking-tighter dark:text-white"
         />
          <TextAnimate className="text-5xl" animation="slideUp" by="word" duration={5}>
      +

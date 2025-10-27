@@ -226,10 +226,8 @@ const cardsDa = [
 export default function Proyectos() {
   return (
     <div className="">
-      <div className="align-center flex justify-center">
-        <h1 className="uppercase text-3xl">Proyectos</h1>
-      </div>
-      <div className="w-full p-6    gap-4 flex justify-center flex-wrap">
+        <div className="mb-6 mt-8"><h1 className="text-center uppercase font-semibold text-3xl">Mis proyectos</h1></div>
+      <div className="w-full lg:w-full p-2 gap-4 flex justify-center flex-wrap">
         {cardsDa.map((card) => (
           
           <div  key={card.id} className=" flex p-2   rounded-sm border-2 border-black border-solid ">

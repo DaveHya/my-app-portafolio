@@ -54,15 +54,17 @@ const cardsData = [
 
 export default function Servicios() {
   return (
-    <div className="w-full p-6   mb-20  gap-4 flex justify-center flex-wrap">
+   <div className="">
+     <div className="mt-20 mb-4 lg:mb-0"><h1 className="text-center uppercase font-semibold text-3xl">Mis servicios </h1></div>
+    <div className="w-full p-0 lg:p-6 mb-20  gap-4 flex justify-center flex-wrap">
  
      {cardsData.map((card) => (
        
          <div key={card.id} className="flex flex-row ">
-         <div className="flex p-5 gap-3  rounded-sm border-2 border-black border-solid ">
+         <div className="flex p-2 lg:p-5  gap-3  rounded-sm border-2 border-black border-solid ">
                  
                 <div className="flex flex-col "  >
-                  <h1 >{card.title}</h1>
+                  <h1 className="font-semibold uppercase">{card.title}</h1>
                   <div className=" w-90" >
                     {card.description}
                   </div>
@@ -79,13 +81,14 @@ export default function Servicios() {
           ))}
        
     </div>
+    </div>
   )
 }
 
 
 export  function ServiciosMb() {
   return (
-    <div className="w-full p-6   mb-20  gap-4 flex justify-center flex-wrap">
+    <div className="w-full p-2 lg:p-6   mb-20  gap-4 flex justify-center flex-wrap">
  
      {cardsData.map((card) => (
        
