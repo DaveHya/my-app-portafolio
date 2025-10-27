@@ -99,7 +99,7 @@ const Hero = () => (
           <Link href="#">Comenzar proyecto</Link>
         </Button>
         <Button asChild variant="outline">
-          <Link className="no-underline" href="#">
+          <Link className="no-underline" href="#proyectos">
            Ver proyectos
           </Link>
         </Button>

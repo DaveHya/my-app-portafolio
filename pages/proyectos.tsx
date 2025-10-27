@@ -225,7 +225,7 @@ const cardsDa = [
 
 export default function Proyectos() {
   return (
-    <div className="">
+    <div id="proyectos" className="">
         <div className="mb-6 mt-8"><h1 className="text-center uppercase font-semibold text-3xl">Mis proyectos</h1></div>
       <div className="w-full lg:w-full p-2 gap-4 flex justify-center flex-wrap">
         {cardsDa.map((card) => (
