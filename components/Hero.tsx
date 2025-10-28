@@ -83,12 +83,12 @@ const Hero = () => (
     <LightRays color="rgba(123, 171, 242, 0.42)" className="z-0"/>
     <div className="flex flex-col items-center justify-center gap-8">
       <Link href="#">
-        <Announcement>
-          <AnnouncementTag>Latest</AnnouncementTag>
-          <AnnouncementTitle>Introducing blocks by Kibo UI</AnnouncementTitle>
+        <Announcement className='z-10 bg-amber-50'>
+          {/* <AnnouncementTag>Dev</AnnouncementTag> */}
+          <AnnouncementTitle>Bienvenido a Daveloper</AnnouncementTitle>
         </Announcement>
       </Link>
-      <h1 className="mb-0 text-balance font-medium text-6xl md:text-7xl xl:text-[5.25rem]">
+      <h1 className="mb-0 text-balance font-medium text-5xl md:text-7xl xl:text-[5.25rem]">
         Transformo tus ideas en sitios web funcionales y atractivos
       </h1>
       <p className="mt-0 mb-0 text-balance text-lg text-muted-foreground">

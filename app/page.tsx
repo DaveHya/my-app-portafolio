@@ -11,6 +11,7 @@ import ServiciosMb from "../components/Servicios";
 import CallMe from "../components/CallMe";
 import Proyectos from "../pages/proyectos";
 import Hero from "../components/Hero";
+import CarouselDemo from "@/components/carousel";
 
 import {
   Heading,
@@ -28,15 +29,7 @@ import {
 import About from "@/components/About";
 
 
-// Ensure that '../components/Compo.tsx' exists and exports a default React component.
-export function Footer() {
-  const pageName = "Dadd";
-  return (
-    <div className="bg-black  w-full  h-30  flex-wrap items-center justify-center text-white p-10">
-      <h1>{pageName}</h1>
-    </div>
-  );
-}
+import Footer from "@/components/Footer";
 
 export default function Home() {
 
@@ -50,7 +43,10 @@ export default function Home() {
            <Compo />
          <Servicios />
           <CallMe />
+       <div className="mt-20 mb-4 lg:mb-4"><h1 className="text-center uppercase font-semibold text-3xl">Mis Proyectos </h1></div>
+          <CarouselDemo />
             <Proyectos />
+            <Footer />
         {/* <div className="flex flex-row items-left">
           <div className="px-2 flex flex-col w-100">
             <LightRays color="rgba(123, 171, 242, 0.42)" className="z-0"/>
@@ -78,8 +74,8 @@ export default function Home() {
         {/*     <MenuBar /> */}
 
       </main>
-
-      {/* <footer className="bg-black  w-full  h-30  flex-wrap items-center justify-center">
+{/* 
+      <footer className="bg-black  w-full  h-30  flex-wrap items-center justify-center">
   
 
        <div className="flex w-50 flex-col bg-amber-600">2</div>

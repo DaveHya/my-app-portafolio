@@ -2,9 +2,19 @@
   width: 90vw;
 }
 
+@media (min-width: 992px) {
+.none-dk{
+  display: none;
+}
+}
+
 @media (max-width: 768px) {
   .caja {
     width: 95vw;
     /* background: blue; */
+  }
+
+  .none-mb {
+    display: none;
   }
 }

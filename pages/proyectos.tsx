@@ -17,7 +17,7 @@ import { RippleButton } from '@/components/ui/shadcn-io/ripple-button';
 
 import Sally from '../images/projects/mideas.svg'
 
-const cardsDa = [
+export const cardsDa = [
   {
     id: 1,
     name: "Dave H",
@@ -223,10 +223,12 @@ const cardsDa = [
   // },
 ];
 
+
+
 export default function Proyectos() {
   return (
-    <div id="proyectos" className="">
-        <div className="mb-6 mt-8"><h1 className="text-center uppercase font-semibold text-3xl">Mis proyectos</h1></div>
+    <div id="proyectos" className="none-mb">
+        {/* <div className="mb-6 mt-8"><h1 className="text-center uppercase font-semibold text-3xl">Mis proyectos</h1></div> */}
       <div className="w-full lg:w-full p-2 gap-4 flex justify-center flex-wrap">
         {cardsDa.map((card) => (
           

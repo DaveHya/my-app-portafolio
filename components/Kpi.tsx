@@ -20,11 +20,11 @@ export default function Kpi() {
           value={4}
           className="lg:text-8xl whitespace-pre-wrap text-6xl font-medium tracking-tighter dark:text-white"
         />
-         <TextAnimate animation="slideUp" by="word" duration={5}>
+         <TextAnimate className="text-black" animation="slideUp" by="word" duration={5}>
       Años
     </TextAnimate>
       </div>
-      <h2 className="pb-3">Experiencia</h2>
+      <h2 className="pb-3 text-black">Experiencia</h2>
     </div>
 
 
