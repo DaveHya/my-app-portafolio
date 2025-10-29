@@ -85,7 +85,7 @@ const Hero = () => (
       <Link href="#">
         <Announcement className='z-10 bg-amber-50'>
           {/* <AnnouncementTag>Dev</AnnouncementTag> */}
-          <AnnouncementTitle>Bienvenido a Daveloper</AnnouncementTitle>
+          <AnnouncementTitle>Bienvenidos a Daveloper</AnnouncementTitle>
         </Announcement>
       </Link>
       <h1 className="mb-0 text-balance font-medium text-5xl md:text-7xl xl:text-[5.25rem]">
