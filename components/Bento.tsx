@@ -129,11 +129,11 @@ export default function Bento() {
   return (
     <div className="dave">
       
-        <BentoGrid>
+        {/* <BentoGrid>
           {features.map((feature, idx) => (
             <BentoCard key={idx} {...feature} />
           ))}
-        </BentoGrid>
+        </BentoGrid> */}
     </div>
   );
 }

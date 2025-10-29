@@ -96,7 +96,7 @@ const Hero = () => (
       </p>
       <div className="flex items-center gap-2">
         <Button asChild>
-          <Link href="#">Comenzar proyecto</Link>
+          <Link href="https://wa.me/56972783856?text=Hola%20vi%20tu%20portafolio%20y%20me%20gustar%C3%ADa%20saber%20m%C3%A1s%20sobre%20tus%20servicios">Comenzar proyecto</Link>
         </Button>
         <Button asChild variant="outline">
           <Link className="no-underline" href="#proyectos">

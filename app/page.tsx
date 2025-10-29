@@ -1,6 +1,5 @@
 import Image from "next/image";
 //import { Globe } from "@/components/ui/globe";
-import Compo from '../components/Compo';
 import Bento from '../components/Bento';
 import Kpi from "../components/Kpi";
 import MenuBar from "../components/MenuBar";
@@ -30,6 +29,7 @@ import About from "@/components/About";
 
 
 import Footer from "@/components/Footer";
+import Skills from "../components/Skills";
 
 export default function Home() {
 
@@ -39,8 +39,8 @@ export default function Home() {
         {/* <MenuBar /> */}
         <Hero />
            <Kpi />
-            <div className="mb-6 mt-8"><h1 className="text-center uppercase font-semibold text-3xl">Skill Tech</h1></div>
-           <Compo />
+            {/* <div className="mb-6 mt-8"><h1 className="text-center uppercase font-semibold text-3xl">Skill Tech</h1></div>
+           <Skills /> */}
          <Servicios />
           <CallMe />
        <div className="mt-20 mb-4 lg:mb-4"><h1 className="text-center uppercase font-semibold text-3xl">Mis Proyectos </h1></div>
