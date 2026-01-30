@@ -9,7 +9,7 @@ export default function Kpi() {
   return (
     <> 
   
-    <div  className="lg:mt-10 mt-5 mb-6 px-3 flex self-center text-black  items-center justify-center gap-10 flex-row w-100">
+    <div  className="lg:mt-10 mt-10 mb-6 px-3 flex self-center text-black  items-center justify-center gap-10 flex-row w-100">
 
   
  

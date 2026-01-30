@@ -41,6 +41,7 @@ export default function Home() {
            <Kpi />
             {/* <div className="mb-6 mt-8"><h1 className="text-center uppercase font-semibold text-3xl">Skill Tech</h1></div>
            <Skills /> */}
+            {/* <Skills /> */}
          <Servicios />
           <CallMe />
        <div className="mt-20 mb-4 lg:mb-4"><h1 className="text-center uppercase font-semibold text-3xl">Mis Proyectos </h1></div>

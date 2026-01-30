@@ -75,7 +75,7 @@ export const cardsDa = [
     image: "../images/projects/caffarena.svg",
     title: "Caffarena",
     description:
-      "Caffarena es una empresa chilena de comercialización de productos spaniles.",
+      "Caffarena es una empresa chilena de comercialización de prendas.",
     url: "https://www.caffarena.cl/",
   },
   {
