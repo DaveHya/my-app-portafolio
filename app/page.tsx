@@ -12,6 +12,7 @@ import Proyectos from "../pages/proyectos";
 import Hero from "../components/Hero";
 import CarouselDemo from "@/components/carousel";
 
+
 import {
   Heading,
   Text,
